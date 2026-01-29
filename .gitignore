@@ -1,0 +1,53 @@
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+.pytest_cache/
+.mypy_cache/
+
+# --- Machine Learning & Data ---
+# Ignore large dataset files usually downloaded/generated
+data/
+datasets/
+*.csv
+*.jsonl
+*.parquet
+*.h5
+*.pt
+*.pth
+*.onnx
+*.weights
+models/
+checkpoints/
+
+# --- Hugging Face specific ---
+# Hugging Face cache can be massive; usually stored in ~/.cache, 
+# but if you symlink it or download locally, ignore it.
+.cache/
+hub/
+
+# --- Environment Variables / Secrets ---
+.env
+.flaskenv
+secrets.json
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
